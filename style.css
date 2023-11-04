@@ -1,41 +1,117 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    text-align: center;
-    background-color: rgb(70, 73, 69);
-}
-p{
-    display: flex;
-    font-size: 20px;
-    
+    font-family: cursive;
+    font-size: 12px;
+    text-align:center;
+    background-color:aquamarine;
 }
 
-.box{
-    display: flex;
-    width: 45px;
-    margin-left: 350px;
-}
-
-ul{
-    display: flex;
-    justify-content: space-around;
+a{
+    text-decoration: none;
 }
 
 li{
-    border: 3px solid greenyellow;
-    border-radius: 3px;
-    background-color: rgb(0, 42, 255);
-    color: white;
     list-style: none;
 }
-a:link{
-    text-decoration: none;
-    color: white;
-}
-a:visited{
-    text-decoration: none;
-    color: white;
 
+/* NAVBAR ESTILO */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
 }
 
-h1{
-    color: red;
+.nav-links a{
+    color: #fff;
+}
+
+
+/* LOGO */
+.logo{
+    font-size: 32px;
+}
+
+
+/* NAVBAR MENU */
+.menu{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover{
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li{
+    padding: 9px 14px;
+}
+
+
+/* MENU SUSPENSO */
+.service{
+    position: relative;
+}
+
+.dropdown{
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li + li{
+    margin-top: 10px;
+}
+
+.dropdown li{
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center';
+}
+
+.dropdown li:hover{
+    background-color: #4c9e9e;    
+}
+
+.services:hover .dropdown{
+    display: block;
+}
+
+/* #################################################################### */
+
+.menu{
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    float: left;
+}
+
+.menu li{
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+}
+
+.menu li a{
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+p{
+    display: flex;
+    font-size: 20px;    
 }
