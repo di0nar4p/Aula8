@@ -1,15 +1,62 @@
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+header {
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno do cabeçalho */
+    display: flex; /* Usar flexbox para alinhar os elementos */
+    justify-content: space-between; /* Espaçamento igual entre elementos */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.header-button {
+    background-color: #f00; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    text-decoration: none; /* Remover sublinhado do link */
+    margin-right: 10px; /* Espaçamento entre os botões */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Arredondar cantos do botão */
+}
+
+.search-bar {
+    flex: 1; /* Expandir para preencher o espaço restante */
+    background-color: #fff; /* Cor de fundo da barra de pesquisa */
+    padding: 10px; /* Espaçamento interno da barra de pesquisa */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Arredondar cantos da barra de pesquisa */
+}
+
 body{
     text-align: center;
-    background-color: chocolate;
+    background-color: rgb(12, 10, 8);
+}
+h1 {
+    color: rgb(255, 255, 255); /* Defina a cor desejada aqui, por exemplo, "red" para vermelho */
 }
 p{
     display: flex;
     font-size: 20px;
+    color:aliceblue
     
 }
 
-.box{
-    display: flex;
-    width: 45px;
-    margin-left: 350px;
+img {
+    float: left;
+    margin-right: 50px;
+}
+footer {
+    background-color: #333; /* Cor de fundo cinza escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
